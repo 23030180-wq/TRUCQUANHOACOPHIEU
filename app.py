@@ -24,7 +24,7 @@ st.image("logo.jpg")
 # TIÊU ĐỀ
 # =============================
 st.title("📈 TRỰC QUAN HÓA GIÁ CỔ PHIẾU VÀ KIỂM ĐỊNH MANN-KENDALL")
-st.subheader("Đề Tài 1_ Chung Mỹ Trúc")
+st.subheader(" đề Tài 1_ Chung Mỹ Trúc ")
 
 st.markdown("---")
 
