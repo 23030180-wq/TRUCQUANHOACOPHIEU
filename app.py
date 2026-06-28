@@ -109,11 +109,30 @@ if st.button("Thực hiện kiểm định"):
         st.subheader("Diễn giải")
 
         if result.p < 0.05:
-
             if result.trend == "increasing":
                 st.success(
                     "Có xu hướng tăng có ý nghĩa thống kê (p < 0.05)."
                 )
-
             elif result.trend == "decreasing":
                 st.success(
+"Có xu hướng giảm có ý nghĩa thống kê (p < 0.05)."
+                )
+            else:
+                st.success(
+                    "Có xu hướng đáng kể về mặt thống kê."
+                )
+        else:
+            st.warning(
+                "Không phát hiện xu hướng có ý nghĩa thống kê (p ≥ 0.05)."
+            )
+
+        # =============================
+        # HIỂN THỊ DỮ LIỆU
+        # =============================
+
+        st.subheader("Dữ liệu")
+
+        st.dataframe(df)
+
+    except Exception as e:
+        st.error(e)
